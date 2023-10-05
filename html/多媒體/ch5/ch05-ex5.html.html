@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>教學意見調查表</h2>
+    <from method="post" action="mailto:60102jay@gmail.com" enctype="text/plain">
+        <fieldset>
+            <legend>個人及課程資料</legend>
+            &nbsp;&nbsp;&nbsp;1.科目名稱<input type="text" name="subject" max="20"><br>
+            &nbsp;&nbsp;&nbsp;2.請選擇科系:
+            <select size="1" name="department">
+                <option value="IM">資管系</option>
+                <option value="BA">企管系</option>
+                <option value="AC">會計系</option>
+            </select><br>
+            &nbsp;&nbsp;&nbsp;3.講師:<input type="text" name="lecture" max="20"><br>
+            &nbsp;&nbsp;&nbsp;4.性別:
+            <input type="radio" name="gender" value="male"><label for="male">男生</label>
+            <input type="radio" name="gender" value="female"><label for="male">女生</label><br>
+            &nbsp;&nbsp;&nbsp;5.開課日期:<input type="date" name="date"><br>
+        </fieldset>
+        <fieldset>
+            <legend>意見調查</legend>
+            &nbsp;&nbsp;&nbsp;1.這門課你的出席狀況:
+            <input type="radio" name="arrive" value="never">沒有缺課
+            <input type="radio" name="arrive" value="1to3">1~3次
+            <input type="radio" name="arrive" value="4to6">4~6次
+            <input type="radio" name="arrive" value="6upper">6次以上<br>
+            &nbsp;&nbsp;&nbsp;2.你對這門課的學習態度:
+            <input type="radio" name="學習態度" value="很認真">很認真
+            <input type="radio" name="學習態度" value="還行">還行
+            <input type="radio" name="學習態度" value="不認真">不認真<br>
+            &nbsp;&nbsp;&nbsp;3.修習這門課的原因(可複選):
+            <input type="checkbox" name="why" value="必修">必修
+            <input type="checkbox" name="why" value="湊學分">湊學分
+            <input type="checkbox" name="why" value="興趣">興趣
+            <input type="checkbox" name="why" value="其他">其他<br>
+            &nbsp;&nbsp;&nbsp;4.請簡敘你對這門課的期望或改進的建議:<br>
+            <textarea name="回饋" cols="25" rows="4" wrap="hard"></textarea><br>
+        </fieldset>
+        <input type="submit" value="送出">
+        <input type="reset" value="重寫">
+    </from>
+</body>
+</html>
